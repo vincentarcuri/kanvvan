@@ -8,7 +8,8 @@ Kanban board editor with a notepad for todo-lists and weather updates.
 2. Create a [virtual environment](https://docs.python.org/3/library/venv.html).
 3. Activate your virtual environment and install Flask and requests.
    
-     ```pip install Flask
+     ```
+     pip install Flask
      pip install requests
      ```
 5. Initialize the database.

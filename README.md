@@ -6,16 +6,18 @@ Kanban board editor with a notepad for todo-lists and weather updates.
 ## Setup
 1. Clone this repository into a folder.
 2. Create a [virtual environment](https://docs.python.org/3/library/venv.html).
-3. Activate your virtual environment and install Flask.
+3. Activate your virtual environment and install Flask and requests.
    
-     ```pip install Flask```
-4. Initialize the database.
+     ```pip install Flask
+     pip install requests
+     ```
+5. Initialize the database.
 
     ```flask --app kanvvan init-db```
-5. Start up the site
+6. Start up the site
 
    ```flask --app kanvvan run```
-6. Point your browser to [http://127.0.0.1:5000](http://127.0.0.1:5000)
+7. Point your browser to [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ## How to Use
 ### Kanban Cards

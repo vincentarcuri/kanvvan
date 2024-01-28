@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}"/>
+    <script src="{{ url_for('static', filename='js/kanban.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/notepad.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/weather.js') }}" defer></script>
+
+</head>
+<body>
+    <div class="toolbar">
+        <button id="addLabelsBtn">Add Labels</button>
+        <button id="editLabelsBtn">Edit Labels</button>
+        <label for="lat">Latitude</label>
+        <input type="text" id="lat"/>
+        <label for="lat">Longitude</label>
+        <input type="text" id="lon"/>
+        <button id="updateLocation">Update Location</button>
+    </div>
+
+    <div class="kanban">
+        <div id="ToDo" data-section="1" class="board">
+                <div class="board-heading">
+                    <h2 class="board-title">To Do</h2>
+                    <div id="todoAdd" class="btnAddCard">&#10010;</div>
+                </div>
+        </div>
+        <div id="InProgress" data-section="2" class="board">
+            <div class="board-heading">            
+                <h2 class="board-title">In Progress</h2>
+                <div id="inProgressAdd" class="btnAddCard">&#10010;</div>
+            </div>
+        </div>
+        <div id="Done" data-section="3" class="board">
+            <div class="board-heading">
+                <h2 class="board-title">Done</h2>
+                <div id="doneAdd" class="btnAddCard">&#10010;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="weather">
+            <div class="temp-and-pic">
+                <img src="" id="weather-img"/>
+                <div class="temp-desc">
+                    <div id="temp"></div>
+                    <p id="weather-desc"></p>
+                </div>
+            </div>
+            <div class="weather-facts">
+                <h2 id="location"></h2>
+                <p id="chance-of-rain"></p>
+            </div>
+        </div>
+
+
+        <div class="notepad">
+            <div class="notepad-heading">
+                <div id="back" class="notepad-arrow">&#8630;</div>
+                <div id="notepad-date"></div>
+                <div id="forward" class="notepad-arrow">&#8631;</div>
+            </div>
+            <div id="todo-list-area" class="list">
+                <ul id="items"></ul>
+                <div class="add-item-div">
+                    <input type="text" id="add-item"/>
+                    <input type="button" id="add-item-btn" value="Add">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+</body>
+</html>
+

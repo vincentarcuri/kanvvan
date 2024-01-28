@@ -1,0 +1,230 @@
+body {
+    background-color: #121212;
+    color: white;
+}
+
+.toolbar {
+    width: 100%;
+    margin: 5px;
+
+}
+
+.kanban {
+    float: left;
+    display: flex;
+    width: 60%;
+}
+
+.info {
+    float: right;
+    width: 40%;
+}
+
+.toolbar input[type=text] {
+    background-color: black;
+    color: rgb(48, 236, 48);
+}
+
+.board {
+    position: relative;
+    min-width: 18vw;
+    min-height: 600px;
+    max-height: 70dvh;
+    background-color:rgb(28, 31, 58);
+    border-radius: 5%;
+    border: rgb(23, 24, 27) groove 2px;
+    margin: 10px;
+    overflow-y: scroll;
+    box-shadow: 0 0 24px rgba(5, 5, 5, 0.35);
+}
+
+.board-title {
+    text-align: center;
+    background-color: rgb(1, 0, 3);
+    position: sticky;
+    top: 0;
+    padding: 20px;
+}
+
+.board-heading {
+    background-color: rgb(1, 0, 3);
+    position: sticky;
+    top: 0;
+    padding: 0.01px;
+}
+
+
+.card {
+    margin: 3px;
+    background-color: #121212;
+    border-radius: 5%;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.35);
+    padding: 10px;
+}
+
+.btnAddCard {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    font-size: 2em;
+}
+
+.btnAddCard:hover {
+    color: rgb(170, 11, 11);
+}
+
+.edit-btn {
+    font-size: 1.5em;
+}
+
+.edit-btn:hover {
+    color: rgb(170, 11, 11);
+}
+
+#EW, #CW {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 10%;
+    width: 40%;
+    background-color: #3b3434;
+    border-radius: 5%;
+    display: grid;
+    padding: 24px;
+    border: 3px solid black;
+}
+
+#LW {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 10%;
+
+    width: 40%;
+    background-color: #3b3434;
+    border-radius: 5%;
+    display: grid;
+    padding: 24px;
+    border: 3px solid black;
+}
+
+#EL {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 10%;
+
+    width: 40%;
+    background-color: #3b3434;
+    border-radius: 5%;
+    display: grid;
+    padding: 24px;
+    border: 3px solid black;
+    overflow-y: scroll;
+}
+
+.weather {
+    display: flex;
+    background-color:rgb(3, 34, 34);
+    padding: 24px;
+    min-width: 30vw;
+    border-radius: 5%;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.35);
+}
+
+.temp-and-pic {
+    display: flex;
+    margin: 2%;
+    width: 50%;
+}
+
+
+#weather-img {
+    padding: 4px;
+    margin: 3px;
+    background-color: #121212;;
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}    
+
+#temp {
+    font-size: 3em;
+}
+
+.weather-facts {
+    padding: 4px;
+}
+
+.stats {
+    background-color:rgb(28, 31, 58);
+    height: 20vh;
+    margin-top: 3vh;
+    margin-bottom:3vh;
+}
+
+.notepad {
+    margin-top: 5%;
+    background-color: rgb(190, 189, 186);
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.list {
+    padding: 14px;
+
+}
+
+.notepad-heading {
+    text-align: center;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    position: sticky;
+    top: 0;
+
+}
+
+#notepad-date {
+    font-size: 1.5em;
+    margin-top: 1vw;
+}
+
+.notepad-arrow {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.notepad-arrow:hover {
+    color: rgb(170, 11, 11);
+}
+
+#items {
+    color: black;
+}
+
+.list-item {
+    display: flex;
+}
+
+.trash-div {
+    padding-right: 2%;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.trash-div:hover {
+    color: rgb(170, 11, 11);
+}
+
+.item-text {
+    padding-top: 1%;
+}
+
+.done {
+    text-decoration: line-through;
+    color: red;
+}
+.add-item-div {
+    margin-left: 9%;
+}
